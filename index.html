@@ -5,65 +5,118 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Inverted Dodo</title>
   <style>
+    /* ===== Global ===== */
     body {
-      font-family: Arial, sans-serif;
-      background: #f9fafb;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fdfdfd;
       margin: 0;
       padding: 0;
-      color: #333;
+      color: #222;
+      line-height: 1.6;
       text-align: center;
     }
-    header {
-      padding: 60px 20px 40px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
     }
+
+    /* ===== Header ===== */
+    header {
+      padding: 80px 20px 50px;
+      background: linear-gradient(135deg, #fafafa, #f0f0f0);
+    }
+
     h1 {
       font-size: 3rem;
-      margin-bottom: 10px;
+      margin-bottom: 0.3em;
     }
+
     p.tagline {
       font-size: 1.2rem;
-      color: #666;
-      margin: 0;
+      color: #555;
+      margin-top: 0;
     }
+
     nav {
-      margin: 20px 0;
+      margin-top: 30px;
     }
+
     nav a {
       display: inline-block;
-      margin: 0 10px;
-      padding: 10px 20px;
-      border-radius: 6px;
-      background: #333;
+      margin: 0 12px;
+      padding: 10px 24px;
+      border-radius: 8px;
+      background: #222;
       color: #fff;
-      text-decoration: none;
-      transition: background 0.3s;
+      font-weight: 500;
+      transition: 0.3s ease;
     }
+
     nav a:hover {
-      background: #555;
+      background: #444;
     }
+
+    /* ===== Section ===== */
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
     }
+
     h2 {
       font-size: 2rem;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
+      color: #333;
     }
+
     .project {
       max-width: 600px;
       margin: 20px auto;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 25px 20px;
+      border-radius: 12px;
       background: #fff;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+
     .project h3 {
       margin-top: 0;
+      margin-bottom: 10px;
     }
+
+    .project a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      border-radius: 6px;
+      background: #222;
+      color: #fff;
+      font-weight: 500;
+      transition: background 0.3s;
+    }
+
+    .project a:hover {
+      background: #555;
+    }
+
+    /* ===== Footer ===== */
     footer {
-      margin-top: 50px;
-      padding: 20px;
+      margin-top: 60px;
+      padding: 25px 20px;
       font-size: 0.9rem;
-      color: #888;
+      color: #777;
+      border-top: 1px solid #eee;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 480px) {
+      h1 { font-size: 2.2rem; }
+      h2 { font-size: 1.6rem; }
+      nav a { padding: 8px 16px; margin: 5px; }
     }
   </style>
 </head>
@@ -84,6 +137,7 @@
       <p>A simple experiment where I’m learning to build and deploy with GitHub Pages.</p>
       <a href="https://expense-tracker-lake-psi.vercel.app/" target="_blank">🔗 View Project</a>
     </div>
+    <!-- You can add more projects here -->
   </section>
 
   <footer>
